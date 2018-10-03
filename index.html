@@ -3,53 +3,142 @@
     <head>
         <meta charset="utf-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Title</title>
+        <title>Karl Horning | Portfolio</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <!-- <link rel="stylesheet" type="text/css" media="screen" href="css/styles.css" /> -->
+        <link rel="stylesheet" type="text/css" media="screen" href="vendors/bootstrap/bootstrap.min.css" />
+        <link rel="stylesheet" type="text/css" media="screen" href="resources/css/styles.css" />
     </head>
     <body>
-        <nav id="navbar">
-            <ul>
-                <li>
-                    <a href="#projects">Projects</a>
-                </li>
-            </ul>
+        <nav id="navbar" class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container">
+                <a class="navbar-brand" href="#">Karl</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#projects">Projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#projects">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#social">Social</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
-        <section id="welcome-section">
-            <h1>Welcome!</h1>
+
+        <header id="welcome-section" class="jumbotron text-center">
+            <div class="container">
+                <h1 class="display-4 align-self-center">Welcome!</h1>
+                <p class="lead">Hello!</p>
+                <p>
+                    <a class="arrow" href="#projects">&#x25BC;</a>
+                </p>
+            </div>
+        </header>
+
+        <section id="">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 offset-md-2">
+                        <!-- <h2>Testimonials</h2> -->
+                        <blockquote class="blockquote">
+                            <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                            <h2 class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></h2>
+                        </blockquote>
+                    </div>
+                </div>
+            </div>
         </section>
 
         <section id="projects">
-            <div class="project-tile">
-                <a href="">Project</a>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md">
+                        <div class="project-tile">
+                            <a href="">Project</a>
+                        </div>
+                    </div>
+                    <div class="col-md">
+                        <div class="project-tile">
+                            <a href="">Project</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md">
+                        <div class="project-tile">
+                            <a href="">Project</a>
+                        </div>
+                    </div>
+                    <div class="col-md">
+                        <div class="project-tile">
+                            <a href="">Project</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md">
+                        <div class="project-tile">
+                            <a href="">Project</a>
+                        </div>
+                    </div>
+                    <div class="col-md">
+                        <div class="project-tile">
+                            <a href="">Project</a>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="project-tile">
-                <a href="">Project</a>
-            </div>
-            <div class="project-tile">
-                <a href="">Project</a>
-            </div>
-            <div class="project-tile">
-                <a href="">Project</a>
-            </div>
-            <div class="project-tile">
-                <a href="">Project</a>
-            </div>
-            <div class="project-tile">
-                <a href="">Project</a>
+        </section>
+
+        <section id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md">
+                        <h2>About</h2>
+                    </div>
+                </div>
             </div>
         </section>
 
         <section id="social">
-            <ul>
-                <li>
-                    <a id="profile-link" href="https://github.com/Karl-Horning">GitHub</a>
-                </li>
-                <li>
-                    <a href="https://www.freecodecamp.org/karl-horning">freeCodeCamp</a>
-                </li>
-            </ul>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md">
+                        <div class="social">
+                            <a id="profile-link" href="https://github.com/Karl-Horning">GitHub</a>
+                        </div>
+                    </div>
+                    <div class="col-md">
+                        <div class="social">
+                            <a href="https://www.freecodecamp.org/karl-horning">freeCodeCamp</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
-        <!-- <script src="js/script.js"></script> -->
+
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md text-center">
+                        <p>
+                            <small>Karl Horning</small>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <script src="vendors/jquery/jquery-3.3.1.min.js"></script>
+        <script src="vendors/bootstrap/bootstrap.min.js"></script>
     </body>
 </html>
