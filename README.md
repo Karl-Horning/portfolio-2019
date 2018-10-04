@@ -11,3 +11,8 @@
 - [ ] **User Story #9:** My portfolio should have at least one media query.
 - [x] **User Story #10:** The height of the welcome section should be equal to the height of the viewport.
 - [ ] **User Story #11:** The navbar should always be at the top of the viewport.# portfolio
+
+## References
+
+How TO - CSS Arrows: https://www.w3schools.com/howto/howto_css_arrows.asp
+Smooth Scrolling from: https://css-tricks.com/snippets/jquery/smooth-scrolling/
