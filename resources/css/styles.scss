@@ -1,0 +1,186 @@
+$black: #212121;
+$blue-grey: #455a64;
+$light-blue-grey: #cfd8dc;
+$light-grey: #cdcdcd;
+$transparent-red: rgba(211, 47, 47, 0.75);
+$white: #fff;
+
+%css-grid {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+// background colors
+#navbar {
+    background: $white;
+}
+
+section:nth-child(even) {
+    background: $black;
+}
+
+.project-tile { 
+    background-color: $light-blue-grey; 
+}
+
+.social { 
+    background-color: $blue-grey; 
+}
+
+footer {
+    background: $black;
+}
+
+// font families
+body {
+    font-family: 'Raleway', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.navbar-brand {
+    font-family: 'Mr De Haviland', cursive;
+}
+
+// font sizes
+.lead {
+    font-size: 2.25em;
+}
+
+.navbar-brand {
+    font-size: 2em;
+}
+
+// font weights
+.display-4 {
+    font-weight: 900;
+}
+
+// font colors
+body {
+    color: $black;
+}
+
+.navbar-light .navbar-brand:hover {
+    color: $transparent-red;
+}
+
+section a {
+    color: $black;
+}
+
+section a:hover {
+    color: $transparent-red;
+}
+
+footer {
+    color: $white;
+}
+
+// additional font styles
+h1, h2, h3, h4, h5, h6 {
+    text-shadow: 1px 1px 2px $light-grey;
+    text-transform: uppercase;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+section a {
+    box-shadow: inset 0 -0.25em $transparent-red;
+    padding-bottom: 2px;
+}
+
+.active { 
+    box-shadow: inset 0 -0.25em $transparent-red; 
+}
+
+em {
+    background: $transparent-red;
+    font-style: normal;
+}
+
+// sections
+#welcome-section {
+    @extend %css-grid;
+    min-height: 100vh; 
+    background: url('../img/adult-black-and-white-casual-308248.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    min-height: 100vh;
+    min-width: 100%;
+}
+
+section {
+    @extend %css-grid;
+    min-height: 50vh;
+}
+
+footer {
+    @extend %css-grid;
+    min-height: 100px; 
+    padding-top: 15px;
+}
+
+// navbar
+#navbar {
+    box-shadow: 1px 1px 2px $light-grey;
+    position: fixed;
+    width: 100%;
+    z-index: 500;
+}
+
+// arrow styles
+.arrow {
+    animation-delay: 2s;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-name: arrow-bob;
+    animation-timing-function: ease-in-out;
+    position: relative;
+}
+
+.arrow:hover {
+    text-decoration: none;
+}
+
+i {
+    border: solid $transparent-red;
+    border-width: 0 9px 9px 0;
+    display: inline-block;
+    height: 30px;
+    padding: 3px;
+    width: 30px;
+}
+
+.right {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+}
+
+.left {
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+}
+
+.up {
+    transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+}
+
+.down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+
+// animations
+@keyframes arrow-bob {
+    from {top: 15px;}
+    to {top: 0;}
+}

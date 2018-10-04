@@ -1,44 +1,172 @@
-.project-tile { background-color: #CFD8DC; }
-.social { background-color: #455A64; }
-
-#welcome-section { 
-    align-items: center;
-    display: flex;
-    justify-content: center;
-    min-height: 100vh; 
+footer, section, #welcome-section {
+  align-items: center;
+  display: flex;
+  justify-content: center;
 }
 
-section {
-    align-items: center;
-    display: flex;
-    justify-content: center;
-    min-height: 50vh;
+#navbar {
+  background: #fff;
 }
 
 section:nth-child(even) {
-    background: #455A64;
+  background: #212121;
+}
+
+.project-tile {
+  background-color: #cfd8dc;
+}
+
+.social {
+  background-color: #455a64;
 }
 
 footer {
-    align-items: center;
-    display: flex;
-    justify-content: center;
-    min-height: 100px; 
-    padding-top: 15px;
+  background: #212121;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Montserrat", sans-serif;
+}
+
+.navbar-brand {
+  font-family: "Mr De Haviland", cursive;
+}
+
+.lead {
+  font-size: 2.25em;
+}
+
+.navbar-brand {
+  font-size: 2em;
+}
+
+.display-4 {
+  font-weight: 900;
+}
+
+body {
+  color: #212121;
+}
+
+.navbar-light .navbar-brand:hover {
+  color: rgba(211, 47, 47, 0.75);
+}
+
+section a {
+  color: #212121;
+}
+
+section a:hover {
+  color: rgba(211, 47, 47, 0.75);
+}
+
+footer {
+  color: #fff;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  text-shadow: 1px 1px 2px #cdcdcd;
+  text-transform: uppercase;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+section a {
+  box-shadow: inset 0 -0.25em rgba(211, 47, 47, 0.75);
+  padding-bottom: 2px;
+}
+
+.active {
+  box-shadow: inset 0 -0.25em rgba(211, 47, 47, 0.75);
+}
+
+em {
+  background: rgba(211, 47, 47, 0.75);
+  font-style: normal;
+}
+
+#welcome-section {
+  min-height: 100vh;
+  background: url("../img/adult-black-and-white-casual-308248.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  min-height: 100vh;
+  min-width: 100%;
+}
+
+section {
+  min-height: 50vh;
+}
+
+footer {
+  min-height: 100px;
+  padding-top: 15px;
+}
+
+#navbar {
+  box-shadow: 1px 1px 2px #cdcdcd;
+  position: fixed;
+  width: 100%;
+  z-index: 500;
 }
 
 .arrow {
-    animation-delay: 2s;
-    animation-duration: 1s;
-    animation-iteration-count: infinite;
-    animation-name: arrow-bob;
-    animation-timing-function: ease-in-out;
-    color: #455A64;
-    font-size: 5em;
-    position: relative;
+  animation-delay: 2s;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-name: arrow-bob;
+  animation-timing-function: ease-in-out;
+  position: relative;
+}
+
+.arrow:hover {
+  text-decoration: none;
+}
+
+i {
+  border: solid rgba(211, 47, 47, 0.75);
+  border-width: 0 9px 9px 0;
+  display: inline-block;
+  height: 30px;
+  padding: 3px;
+  width: 30px;
+}
+
+.right {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+
+.left {
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+}
+
+.up {
+  transform: rotate(-135deg);
+  -webkit-transform: rotate(-135deg);
+}
+
+.down {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
 }
 
 @keyframes arrow-bob {
-    from {top: 15px;}
-    to {top: 0;}
+  from {
+    top: 15px;
+  }
+  to {
+    top: 0;
+  }
 }
+
+/*# sourceMappingURL=styles.css.map */
