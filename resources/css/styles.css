@@ -4,16 +4,13 @@ footer, section, #welcome-section {
   justify-content: center;
 }
 
-#navbar {
+body, #navbar {
   background: #fff;
 }
 
 section:nth-child(even) {
   background: #212121;
-}
-
-.project-tile {
-  background-color: #cfd8dc;
+  background-image: radial-gradient(circle, #434343, #3a3a3a, #323232, #292929, #212121);
 }
 
 .social {
@@ -104,6 +101,8 @@ em {
 
 section {
   min-height: 50vh;
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 
 footer {
