@@ -15,4 +15,5 @@
 ## References
 
 How TO - CSS Arrows: https://www.w3schools.com/howto/howto_css_arrows.asp
+iHover: http://gudh.github.io/ihover/dist/
 Smooth Scrolling from: https://css-tricks.com/snippets/jquery/smooth-scrolling/
