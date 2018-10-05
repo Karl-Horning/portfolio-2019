@@ -34,3 +34,16 @@ $('a[href*="#"]')
         }
     }
 });
+
+// Insert copyright information
+var currentTime = new Date();
+var year = currentTime.getFullYear();
+var copyrightYear;
+
+if(year == 2018) {
+    copyrightYear = year;
+} else {
+    copyrightYear = `2018-${year}`
+}
+
+$('.copyright-info').html(`&copy; Copyright Karl Horning ${copyrightYear}, All Rights Reserved`);
