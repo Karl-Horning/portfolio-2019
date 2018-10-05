@@ -4,6 +4,11 @@ footer, section, #welcome-section {
   justify-content: center;
 }
 
+::selection {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fff;
+}
+
 body, #navbar {
   background: #fff;
 }
@@ -11,10 +16,6 @@ body, #navbar {
 section:nth-child(even) {
   background: #212121;
   background-image: radial-gradient(circle, #434343, #3a3a3a, #323232, #292929, #212121);
-}
-
-.social {
-  background-color: #455a64;
 }
 
 footer {
@@ -41,6 +42,14 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 2em;
 }
 
+.blockquote-text {
+  font-size: 1.5em;
+}
+
+.blockquote-footer {
+  font-size: 0.9em;
+}
+
 .display-4 {
   font-weight: 900;
 }
@@ -53,11 +62,15 @@ body {
   color: rgba(211, 47, 47, 0.75);
 }
 
+section:nth-child(even), section:nth-child(even) a {
+  color: #fff;
+}
+
 section a {
   color: #212121;
 }
 
-section a:hover {
+section a:hover, section:nth-child(even) a:hover {
   color: rgba(211, 47, 47, 0.75);
 }
 
@@ -76,7 +89,7 @@ a:hover {
 
 section a {
   box-shadow: inset 0 -0.25em rgba(211, 47, 47, 0.75);
-  padding-bottom: 2px;
+  padding-bottom: 6px;
 }
 
 .active {
@@ -86,6 +99,10 @@ section a {
 em {
   background: rgba(211, 47, 47, 0.75);
   font-style: normal;
+}
+
+.blockquote-text::before, .blockquote-text::after {
+  content: '"';
 }
 
 #welcome-section {

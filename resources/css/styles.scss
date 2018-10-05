@@ -11,6 +11,11 @@ $white: #fff;
     justify-content: center;
 }
 
+::selection {
+    background-color:rgba(0, 0, 0, 0.8);
+    color: $white;
+  }
+
 // background colors
 body, #navbar {
     background: $white;
@@ -19,10 +24,6 @@ body, #navbar {
 section:nth-child(even) {
     background: $black;
     background-image: radial-gradient(circle, #434343, #3a3a3a, #323232, #292929, #212121);
-}
-
-.social { 
-    background-color: $blue-grey; 
 }
 
 footer {
@@ -51,6 +52,14 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 2em;
 }
 
+.blockquote-text {
+    font-size: 1.5em;
+}
+
+.blockquote-footer {
+    font-size: 0.9em;
+}
+
 // font weights
 .display-4 {
     font-weight: 900;
@@ -65,11 +74,15 @@ body {
     color: $transparent-red;
 }
 
+section:nth-child(even), section:nth-child(even) a {
+    color: $white;
+}
+
 section a {
     color: $black;
 }
 
-section a:hover {
+section a:hover, section:nth-child(even) a:hover {
     color: $transparent-red;
 }
 
@@ -89,7 +102,7 @@ a:hover {
 
 section a {
     box-shadow: inset 0 -0.25em $transparent-red;
-    padding-bottom: 2px;
+    padding-bottom: 6px;
 }
 
 .active { 
@@ -99,6 +112,10 @@ section a {
 em {
     background: $transparent-red;
     font-style: normal;
+}
+
+.blockquote-text::before, .blockquote-text::after {
+    content: '"';
 }
 
 // sections
