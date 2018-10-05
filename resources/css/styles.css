@@ -5,7 +5,7 @@ footer, section, #welcome-section {
 }
 
 ::selection {
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(211, 47, 47, 0.75);
   color: #fff;
 }
 
@@ -50,6 +50,10 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 0.9em;
 }
 
+i {
+  font-size: 3em;
+}
+
 .display-4 {
   font-weight: 900;
 }
@@ -78,8 +82,11 @@ footer {
   color: #fff;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6, .lead {
   text-shadow: 1px 1px 2px #cdcdcd;
+}
+
+h1, h2, h4, h5, h6 {
   text-transform: uppercase;
 }
 
@@ -99,10 +106,17 @@ section a {
 em {
   background: rgba(211, 47, 47, 0.75);
   font-style: normal;
+  text-shadow: none;
 }
 
 .blockquote-text::before, .blockquote-text::after {
   content: '"';
+}
+
+.skills i {
+  line-height: 1.5em;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 #welcome-section {
@@ -134,7 +148,30 @@ footer {
   z-index: 500;
 }
 
-.arrow {
+.btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:visited {
+  background-color: rgba(211, 47, 47, 0.75) !important;
+}
+
+.btn-primary {
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0px 1px 2px #404040;
+  padding: 15px 45px;
+}
+
+.btn-primary:hover {
+  box-shadow: 0px 4px 5px #404040;
+  background: rgba(211, 47, 47, 0.75);
+  transform: translateY(-2px);
+}
+
+.btn-primary:active {
+  background: rgba(211, 47, 47, 0.75);
+  box-shadow: 0px 1px 2px #404040;
+  transform: translateY(0);
+}
+
+.animated {
   animation-delay: 2s;
   animation-duration: 1s;
   animation-iteration-count: infinite;
@@ -143,11 +180,7 @@ footer {
   position: relative;
 }
 
-.arrow:hover {
-  text-decoration: none;
-}
-
-i {
+.arrow {
   border: solid rgba(211, 47, 47, 0.75);
   border-width: 0 9px 9px 0;
   display: inline-block;
