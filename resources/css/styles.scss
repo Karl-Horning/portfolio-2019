@@ -236,3 +236,15 @@ footer {
     from {top: 15px;}
     to {top: 0;}
 }
+
+// form styles
+.contact-form input, .contact-form textarea {
+    border: 3px solid $light-grey;
+    border-radius: 2px;
+ }
+
+ .contact-form input:focus, .contact-form textarea:focus {
+    border: 3px solid $transparent-red;
+    box-shadow: 0 0 3px $transparent-red;
+    transition: border .25s;
+ }

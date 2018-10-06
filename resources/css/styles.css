@@ -217,5 +217,15 @@ footer {
     top: 0;
   }
 }
+.contact-form input, .contact-form textarea {
+  border: 3px solid #cdcdcd;
+  border-radius: 2px;
+}
+
+.contact-form input:focus, .contact-form textarea:focus {
+  border: 3px solid rgba(211, 47, 47, 0.75);
+  box-shadow: 0 0 3px rgba(211, 47, 47, 0.75);
+  transition: border 0.25s;
+}
 
 /*# sourceMappingURL=styles.css.map */
