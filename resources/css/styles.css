@@ -62,7 +62,7 @@ body {
   color: #212121;
 }
 
-.navbar-light .navbar-brand:hover {
+.navbar-light .navbar-brand:hover, footer a:hover {
   color: rgba(211, 47, 47, 0.75);
 }
 
@@ -78,7 +78,7 @@ section a:hover, section:nth-child(even) a:hover {
   color: rgba(211, 47, 47, 0.75);
 }
 
-footer {
+footer, footer a {
   color: #fff;
 }
 

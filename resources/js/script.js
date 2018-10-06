@@ -46,4 +46,4 @@ if(year == 2018) {
     copyrightYear = `2018-${year}`
 }
 
-$('.copyright-info').html(`&copy; Copyright Karl Horning ${copyrightYear}, All Rights Reserved`);
+$('.copyright-info').html(`&copy; Copyright <a href="https://www.linkedin.com/in/karlhorning" target="_blank">Karl Horning</a> ${copyrightYear}, All Rights Reserved`);

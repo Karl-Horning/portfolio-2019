@@ -75,7 +75,7 @@ body {
     color: $black;
 }
 
-.navbar-light .navbar-brand:hover {
+.navbar-light .navbar-brand:hover, footer a:hover {
     color: $transparent-red;
 }
 
@@ -91,7 +91,7 @@ section a:hover, section:nth-child(even) a:hover {
     color: $transparent-red;
 }
 
-footer {
+footer, footer a {
     color: $white;
 }
 
