@@ -15,7 +15,11 @@ $white: #fff;
 ::selection {
     background-color:$transparent-red;
     color: $white;
-  }
+}
+
+body, .navbar, section {
+    min-width: 640px;
+}
 
 // background colors
 body, #navbar {

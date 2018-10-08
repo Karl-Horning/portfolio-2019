@@ -9,6 +9,10 @@ footer, section, #welcome-section {
   color: #fff;
 }
 
+body, .navbar, section {
+  min-width: 640px;
+}
+
 body, #navbar {
   background: #fff;
 }
