@@ -34,12 +34,20 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Mr De Haviland", cursive;
 }
 
+body {
+  font-size: 18px;
+}
+
 .lead {
-  font-size: 2.25em;
+  font-size: 2em;
 }
 
 .navbar-brand {
-  font-size: 2em;
+  font-size: 1.8em;
+}
+
+.nav-link {
+  font-size: 0.9em;
 }
 
 .blockquote-text {
