@@ -9,7 +9,7 @@ footer, section, #welcome-section {
   color: #fff;
 }
 
-body, .navbar, section {
+body, section {
   min-width: 640px;
 }
 
@@ -64,6 +64,10 @@ body {
 
 i {
   font-size: 3em;
+}
+
+.ih-item.square.effect10 .info p {
+  font-size: 1em;
 }
 
 .display-4 {
@@ -245,24 +249,15 @@ footer {
   transition: border 0.25s;
 }
 
-@media (min-width: 576px) {
-  body {
-    background: yellow;
-  }
-}
 @media (min-width: 768px) {
-  body {
-    background: blue;
-  }
-
   .skills i {
     padding-left: 10px;
     padding-right: 10px;
   }
 }
 @media (min-width: 992px) {
-  body {
-    background: green;
+  .ih-item.square.effect10 .info p {
+    font-size: 0.8em;
   }
 
   .active {
@@ -271,8 +266,8 @@ footer {
   }
 }
 @media (min-width: 1200px) {
-  body {
-    background: red;
+  .ih-item.square.effect10 .info p {
+    font-size: 1em;
   }
 }
 

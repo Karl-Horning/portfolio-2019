@@ -17,7 +17,7 @@ $white: #fff;
     color: $white;
 }
 
-body, .navbar, section {
+body, section {
     min-width: 640px;
 }
 
@@ -75,6 +75,10 @@ body {
 
 i {
     font-size: 3em;
+}
+
+.ih-item.square.effect10 .info p {
+    font-size: 1em;
 }
 
 // font weights
@@ -265,20 +269,9 @@ footer {
     box-shadow: 0 0 3px $transparent-red;
     transition: border .25s;
  }
- 
-// Small devices (landscape phones, 576px and up)
-@media (min-width: 576px) {
-    body {
-        background: yellow;
-    }
-}
 
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) {
-    body {
-        background: blue;
-    }
-
     .skills i {
         padding-left: 10px;
         padding-right: 10px;
@@ -286,10 +279,11 @@ footer {
 }
 
 // Large devices (desktops, 992px and up)
-@media (min-width: 992px) { 
-    body {
-        background: green;
-    }    
+@media (min-width: 992px) {     
+    .ih-item.square.effect10 .info p {
+        font-size: 0.8em;
+    }
+
     .active {
         background: none;
         box-shadow: inset 0 -0.25em $transparent-red; 
@@ -297,8 +291,8 @@ footer {
 }
 
 // Extra large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) { 
-    body {
-        background: red;
+@media (min-width: 1200px) {
+    .ih-item.square.effect10 .info p {
+        font-size: 1em;
     }
  }
