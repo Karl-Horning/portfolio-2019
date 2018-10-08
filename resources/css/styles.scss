@@ -125,8 +125,13 @@ section a {
     padding-bottom: 6px;
 }
 
+.navbar-nav .nav-link {
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
 .active { 
-    box-shadow: inset 0 -0.25em $transparent-red; 
+    background: $transparent-red;
 }
 
 em {
@@ -141,8 +146,8 @@ em {
 
 .skills i {
     line-height: 1.5em;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 25px;
+    padding-right: 25px;
 }
 
 // sections
@@ -259,4 +264,41 @@ footer {
     border: 3px solid $transparent-red;
     box-shadow: 0 0 3px $transparent-red;
     transition: border .25s;
+ }
+ 
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+    body {
+        background: yellow;
+    }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+    body {
+        background: blue;
+    }
+
+    .skills i {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) { 
+    body {
+        background: green;
+    }    
+    .active {
+        background: none;
+        box-shadow: inset 0 -0.25em $transparent-red; 
+    }
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { 
+    body {
+        background: red;
+    }
  }
