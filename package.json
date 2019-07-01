@@ -23,9 +23,7 @@
   },
   "homepage": "https://github.com/Karl-Horning/portfolio#readme",
   "dependencies": {
-    "bootstrap": "^4.3.1",
-    "express": "^4.17.1",
-    "jquery": "^3.4.1",
-    "popper.js": "^1.14.7"
+    "ejs": "^2.6.2",
+    "express": "^4.17.1"
   }
 }

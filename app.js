@@ -7,7 +7,7 @@ app.use(express.static(`${__dirname}/views`));
 app.set('view engine', 'ejs');
 
 app.get('/', (req, res) => {
-    res.send('It works!');
+    res.render('index');
 });
 
 // Run the server
