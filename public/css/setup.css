@@ -102,3 +102,7 @@ a:hover {
 .red-text {
     color: var(--red);
 }
+
+.text-center {
+    text-align: center!important;
+}

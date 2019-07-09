@@ -397,30 +397,37 @@
     
     <!-- Contact -->
     <section id="contact">
-        <div class="contact-intro">
-            <h2>Contact</h2>
-            <p class="section-lead">Send me a message! Your email address will not be shared. Required fields are marked with a <span class="red-text">*</span>.</p>
-        </div>
+            {{#if msg}}
+                <div class="contact-intro"></div>
+                    <h2 class="text-center">Contact</h2>
+                    <p class="section-lead text-center"><strong>{{msg}}</strong></p>
+                </div>
+            {{else}}
+                <div class="contact-intro">
+                    <h2>Contact</h2>
+                    <p class="section-lead">Send me a message! Your email address will not be shared. Required fields are marked with a <span class="red-text">*</span>.</p>
+                </div>
 
-        <form class="contact-form" action="">
-            <fieldset id="contact-form-name">
-                <label for="name">Name<span class="red-text">*</span></label>
-                <input type="text" name="name" id="name" placeholder="John Smith" required>
-            </fieldset>
-            <fieldset id="contact-form-email">
-                <label for="email">Email<span class="red-text">*</span></label>
-                <input type="email" name="email" id="email" placeholder="john@example.com" required>
-            </fieldset>
-            <fieldset id="contact-form-no-bots">
-                <label for="no-bots">Please leave this field empty</label>
-                <input type="text" name="no-bots" id="no-bots" placeholder="No bots allowed">
-            </fieldset>
-            <fieldset id="contact-form-message">
-                <label for="message">Message<span class="red-text">*</span></label>
-                <textarea name="message" id="message" placeholder="Hi, how are you? Are you available to talk at 18:00 on the twelfth?" cols="30" rows="18"></textarea>
-            </fieldset>
-            <button id="contact-form-submit" type="submit">Send Message</button>
-        </form>
+                <form class="contact-form"  method="POST" action="/">
+                    <fieldset id="contact-form-name">
+                        <label for="name">Name<span class="red-text">*</span></label>
+                        <input type="text" name="name" id="name" placeholder="John Smith" required>
+                    </fieldset>
+                    <fieldset id="contact-form-email">
+                        <label for="email">Email<span class="red-text">*</span></label>
+                        <input type="email" name="email" id="email" placeholder="john@example.com" required>
+                    </fieldset>
+                    <fieldset id="contact-form-no-bots">
+                        <label for="bots">Please leave this field empty</label>
+                        <input type="text" name="bots" id="bots" placeholder="No bots allowed">
+                    </fieldset>
+                    <fieldset id="contact-form-message">
+                        <label for="message">Message<span class="red-text">*</span></label>
+                        <textarea name="message" id="message" placeholder="Hi, how are you? Are you available to talk at 18:00 on the twelfth?" cols="30" rows="18" required></textarea>
+                    </fieldset>
+                    <button id="contact-form-submit" type="submit">Send Message</button>
+                </form>
+            {{/if}}
 
     </section>
 
