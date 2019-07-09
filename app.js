@@ -12,4 +12,4 @@ app.get('/', (req, res) => {
 
 // Run the server
 const PORT = process.env.PORT || 3000;
-app.listen(PORT, () => console.info(`The server is running on port ${PORT}`));
+app.listen(PORT, () => console.info(`The server is available at http://localhost:${PORT}`));
