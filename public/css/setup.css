@@ -1,10 +1,10 @@
 /* Colors */
 :root {
     --black: #333;
-    --dark-red: rgba(255, 0, 0, .5);
+    --dark-red: rgba(255, 0, 0, 0.5);
     --grey: #666;
     --lighter-black: #19292e;
-    --red: rgba(255, 0, 0, .75);
+    --red: rgba(255, 0, 0, 0.75);
     --white: #f9fcff;
 }
 
@@ -21,31 +21,36 @@ html {
     box-sizing: inherit;
 }
 
-::selection, ::-moz-selection {
+::selection,
+::-moz-selection {
     background: var(--red);
     color: var(--lighter-black);
 }
 
 /* Text styles */
 @font-face {
-    font-family: 'Open Sans';
+    font-family: "Open Sans";
     font-style: normal;
     font-weight: 400;
-    src: local('Open Sans'), local('OpenSans'), url(https://fonts.gstatic.com/s/opensans/v13/cJZKeOuBrn4kERxqtaUH3bO3LdcAZYWl9Si6vvxL-qU.woff) format('woff');
+    src: local("Open Sans"), local("OpenSans"),
+        url(https://fonts.gstatic.com/s/opensans/v13/cJZKeOuBrn4kERxqtaUH3bO3LdcAZYWl9Si6vvxL-qU.woff)
+            format("woff");
 }
 
 @font-face {
-    font-family: 'Open Sans';
+    font-family: "Open Sans";
     font-style: normal;
     font-weight: 700;
-    src: local('Open Sans Bold'), local('OpenSans-Bold'), url(https://fonts.gstatic.com/s/opensans/v13/k3k702ZOKiLJc3WVjuplzKRDOzjiPcYnFooOUGCOsRk.woff) format('woff');
+    src: local("Open Sans Bold"), local("OpenSans-Bold"),
+        url(https://fonts.gstatic.com/s/opensans/v13/k3k702ZOKiLJc3WVjuplzKRDOzjiPcYnFooOUGCOsRk.woff)
+            format("woff");
 }
 
 html {
     background: var(--white);
     color: var(--black);
     font-size: 10px;
-    font-family: 'Avenir Next', Open Sans, sans-serif;
+    font-family: "Avenir Next", Open Sans, sans-serif;
     line-height: 1.15;
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
@@ -68,11 +73,17 @@ h3 {
     text-align: center;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     color: var(--lighter-black);
 }
 
-p, li {
+p,
+li {
     font-size: 2rem;
     line-height: 1.5;
 }
@@ -87,7 +98,7 @@ a {
     color: var(--black);
     font-weight: bold;
     text-decoration: none;
-    transition: all .4s cubic-bezier(0,1,.3,1);
+    transition: all 0.4s cubic-bezier(0, 1, 0.3, 1);
 }
 
 a:hover {
@@ -96,7 +107,7 @@ a:hover {
 }
 
 .white-text {
-    color: var(--white)!important;
+    color: var(--white) !important;
 }
 
 .red-text {
@@ -104,5 +115,5 @@ a:hover {
 }
 
 .text-center {
-    text-align: center!important;
+    text-align: center !important;
 }
