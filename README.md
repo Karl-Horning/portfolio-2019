@@ -1,4 +1,4 @@
-# Responsive Web Design Projects - Build a Personal Portfolio Webpage
+# freeCodeCamp Responsive Web Design Projects - Build a Personal Portfolio Webpage
 
 - [x] **User Story #1:** My portfolio should have a welcome section with an id of welcome-section.
 - [x] **User Story #2:** The welcome section should have an h1 element that contains text.
