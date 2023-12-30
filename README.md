@@ -48,7 +48,7 @@ View the live demo on CodePen: [Karl Horning's Portfolio Webpage 2019](https://c
 
 ## Prerequisites
 
-Make sure you have Node.js and npm installed on your machine. You can download them from [nodejs.org](https://nodejs.org/).
+Make sure you have a web browser to view the project.
 
 ## Installation
 
