@@ -15,6 +15,7 @@ Welcome to the repository for my 2019 portfolio website. This project showcases 
 - [Contributing](#contributing)
 - [Acknowledgments](#acknowledgments)
 - [Contact](#contact)
+- [Author](#author)
 
 ## Description
 
